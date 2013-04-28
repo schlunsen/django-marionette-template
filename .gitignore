@@ -2,5 +2,4 @@
 *.swo
 *.pyc
 .DS_Store
-localsettings.py
 *.*un~
