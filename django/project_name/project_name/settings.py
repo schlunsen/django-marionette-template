@@ -123,7 +123,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'pipeline',
     'django_extensions',
     '{{ project_name }}.main',
 )
