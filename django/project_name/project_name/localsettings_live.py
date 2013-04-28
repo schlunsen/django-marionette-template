@@ -1,3 +1,7 @@
+import os
+
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
@@ -9,3 +13,7 @@ DATABASES = {
         'PORT': '',                      # Set to empty string for default.
     }
 }
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, '..', '..', '..', 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, '..', '..', '..', '..', '..', 'media')
