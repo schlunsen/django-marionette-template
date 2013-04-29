@@ -1,6 +1,11 @@
 Release Log
 ===========
 
+0.1.1
+_____
+Added debug settings to localsettings envs
+
+
 0.1
 ---
 Simple django project for template use with djang-admin.py
