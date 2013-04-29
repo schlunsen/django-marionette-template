@@ -2,3 +2,4 @@ Django==1.5.1
 south
 psycopg2
 django-extensions
+django-compressor

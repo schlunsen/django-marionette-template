@@ -15,5 +15,9 @@ DATABASES = {
 }
 
 
+COMPRESS_PRECOMPILERS = (
+    ('text/less', '/home/{{ project_name }}/node_modules/.bin/lessc {infile} {outfile}'),
+)
+
 STATIC_ROOT = os.path.join(BASE_DIR, '..', '..', '..', 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, '..', '..', '..', '..', '..', 'media')
