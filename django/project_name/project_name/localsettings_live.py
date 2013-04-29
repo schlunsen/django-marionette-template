@@ -1,5 +1,8 @@
 import os
 
+DEBUG = False
+TEMPLATE_DEBUG = DEBUG
+
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 DATABASES = {
