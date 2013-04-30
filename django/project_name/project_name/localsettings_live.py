@@ -18,6 +18,7 @@ DATABASES = {
 }
 
 
+# Install lessc compiler via npm to home dir
 COMPRESS_PRECOMPILERS = (
     ('text/less', '/home/{{ project_name }}/node_modules/.bin/lessc {infile} {outfile}'),
 )

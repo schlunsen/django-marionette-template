@@ -1,6 +1,12 @@
 Release Log
 ===========
 
+
+0.2
+_____
+Added basic support for django-compressor
+
+
 0.1.1
 _____
 Added debug settings to localsettings envs
