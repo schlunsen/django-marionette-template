@@ -1,5 +1,8 @@
 import os
 
+DEBUG = False
+TEMPLATE_DEBUG = DEBUG
+
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 DATABASES = {
@@ -14,6 +17,11 @@ DATABASES = {
     }
 }
 
+
+# Install lessc compiler via npm to home dir
+COMPRESS_PRECOMPILERS = (
+    ('text/less', '/home/{{ project_name }}/node_modules/.bin/lessc {infile} {outfile}'),
+)
 
 STATIC_ROOT = os.path.join(BASE_DIR, '..', '..', '..', 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, '..', '..', '..', '..', '..', 'media')
